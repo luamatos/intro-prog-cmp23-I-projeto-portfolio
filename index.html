@@ -2,97 +2,119 @@
 <html lang="pt-br">
     
 <head>
- <title>Tech: Mulheres negras</title>
+ <title>Meu portifolio</title>
  <meta charset="uft-8">
  <meta name="viewport" content="width=device=width, initial-scale=1.0">
  <meta name="description" content="Portfólio pessoal da luana">
  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+ <link real="shortcut icon" href="img/myeu.jpg">
+ <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
+  <header class="header-menu">
     <nav>
-     <ul>
-       <li>Formação</li>
-       <li>Portfólio</li>
-       <li>Contatos</li>
-     </ul>
+      <ul class="lista-menu">
+        <li>
+          <a href="#formacao">Formação</a>
+        </li>
+        <li>
+          <a href="#cursos">Cursos</a>
+        </li>
+        <li>
+          <a href="#contatos">Contatos</a>
+        </li>
+      </ul>
     </nav>
   </header>
+
  
-  <main> 
-   <section>
-    <article>
-     <div>
-       <img src="img/avatar.jpg" alt="foto perfil">
-     </div>
-     <div>
-       <h1>Luana Matos</h1>
-       <h2>Desenvolvedora Web</h2>
-     </div>
-     <div>
-      <p>
-        Meu nome é luana ,tenho 16 anos <br>
-        moro na zona leste de São Paulo, estou no segundo amo do ensino médio 
-      </p>
-     <div>
-    </article>
-   </section>
+    <section class="principal">
+      <article class="container subcontainer-principal">
+        <div>
+          <img src="img/myeu.jpg" class="minhaeu"  alt="foto perfil">
+         </div>
 
-  <section>
-    <article>
-      <div>
-         <h3>Formação</h3>
-      </div>
+        <div>
+          <h2 class="nome-completo">Luana Cassimiro</h2>
+          <h3 class="profissao">Estudante</h3>
+        </div>
+           <p>
+        Olá, tenho 16 anos e moro em São Paulo. <br>
+        Estou no Ensino médio e estou explorando um pouquinho da área da tecnologia.
+        <br> Tenho muito interesse na área de CSS e UX Design
+          </p>
+        </div>
+      </article>
+    </section>
 
-      <div>
-        <ul>
-          <li>
-            <h4>Curso de Programação</h4>
-            <a href="https://minasprogramam.com/" target="_blank">Instuto Minas Programam</a>
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. fusce a nibh in sem tem.</p>
+    <section id="formacao">
+      <article class="container article-lista">
+            <div>
+              <h3 class="topico-principal">Formação</h3>
+            </div>
+    
+        
+        <div class="lista-item">
+          <ul class="lista-formacao">
+            <li>
+              <h3 class="lista-titulo">Ensino Médio</h3>
+              <a href="http://eteccamargoaranha.com.br/" target="_blank" class="lista-local">Colégio</a>
+              <p class="lista-descricao">Atualmente estou cursando o 2 ano do Ensino Médio 
+                integrado ao curso técnico em Administração na ETEC no período da manhã, com a previsão de término para 2024.</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="cursos">
+      <article class="container">
+        <div>
+          <h3 class="topico-principal">Cursos</h3>
+        </div>
+       
+        <div class="lista-item">
+          <ul class="lista-formacao">
+            <li>
+              <h3 class="lista-titulo">Curso de Programação</h3>
+              <a href="https://minasprogramam.com/" target="_blank" class="lista-local"> Minas Programam</a>
+              <p class="lista-descricao">Curso Sobre Conceitos Básicos da Programação com foco em HTML, CSS e Lógica de Programação (JavaScript). 
+               <br>Duração: <b>Início :</b> Março de 2023 <b> Término: </b> Julho de 2023</p>
             </li>
             <li>
-              <h3>Ensino Médio</h3>
-              <h4>colégio ensino</h4>
+              <h3 class="lista-titulo">Curso de Python</h3>
+              <a href="https://codificadas.ime.usp.br/" target="_blank" class="lista-local">Codificadas USP</a>
+              <p class="lista-descricao">Curso de Verão da USP, Introdutório ao Python. 
+                <br>Duração: <b>Início :</b> 10 de Janeiro de 2023 <b> Término: </b> 26 de Janeiro de 2023</p>
             </li>
-            
-           <ul>
-         </div>
-       </article>
-      </section>
+            <li>
+              <p class="lista-titulo">Excel Básico</p>
+              <a href="https://online.sp.senai.br/curso/92632/483/excel-basico" target="_blank" class="lista-local">Senai </a>
+              <p class="lista-descricao">Curso Sobre Excel Básico, onde teve como objetivo abordar problemas básicos de cálculos para serem resolvidos.
+                <br>Duração: 20 Horas</p>
+            </li>
+          </ul>
+        </div> 
+      </article>
+    </section>
+  </main>
 
-      <section>
-        <article>
-          <div>Portfólio</div>
+  <footer id="contatos" class="footer">
+    <div class="container">
+      <ul class="lista-footer">
+          <li><i class="fas fa-envelope-square rodape-icone"></i><a href="mailto:lua_cassimiro@hotmail.com" target="_blank" class="links-footer">lua_cassimiro@hotmail.com</a></li>
+          <li><i class="fab fa-linkedin rodape-icone"></i><a href="https://www.linkedin.com/" target="_blank" class="links-footer">luanacassimiro</a></li>
+          <li><i class="fab fa-github-square rodape-icone"></i><a href="https://github.com/" target="_blank" class="links-footer">luamatos</a></li>
+        </ul>
+      </div>
+       <div id="paragrafo-rodape">
+        <p class="rodape">Site desenvolvido por Luana Cassimiro</p>
+       </div>
+    </footer>
 
-          <div>
-            <ul>
-              <li>
-                <h3>execel basico</h3>
-                <h4>Senai online</h4>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. fusce a nibh in sem tem.</p>
-              </li>
-            </ul>
-           <div>
-          <h4>Desenvolvedora Web</h4>
-          <a href="https://minasprogramam.com/" target="_blank">Instuto Minas Programam</a>
-          <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. fusce a nibh in sem tem.</p>
-         </div>
-        </article>
-       </section>
-     </main>
-    
-   <footer> 
-    <div>
-      <ul>
-        <li>
-          <i class="fas fa-envelope-square"></i><a href="#" >luaxcassimiro@gmail.com</a>
-          li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/" target="_blank">luana-matos</a></li>
-        <li><i class="fab fa-github-square"></i><a href="https://github.com/" target="_blank">luanamatos</a></li>
-     </ul>
-    </div>
-   </footer>
-</body>
+    <script src="script.js"></script>
 
-<html>
+  </body>
+  
+  </html>
